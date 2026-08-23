@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Budget Tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <a class="brand" href="index.html">
+    <span class="brand-mark"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+    <span class="brand-name">Budget Tracker</span>
+  </a>
+
+  <nav class="nav-links">
+    <a class="active" href="privacy.html">Privacy Policy</a>
+    <a href="terms.html">Terms &amp; Conditions</a>
+  </nav>
+
+  <p class="eyebrow">Legal</p>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Operated by Bramora Labs &nbsp;·&nbsp; Last updated: August 2026</p>
+
+  <h2>1. The Short Version</h2>
+  <p>Budget Tracker does not collect, transmit, or share your data with anyone — including us. The App has no account system, no server, no cloud sync, no analytics, no ad network, and no crash-reporting service. Everything you enter stays on your device, encrypted, until you choose to export it yourself.</p>
+
+  <h2>2. What Data the App Stores, and Where</h2>
+  <p>The App stores the following, <strong>locally on your device only</strong>, in an encrypted database:</p>
+  <ul>
+    <li>Transactions, accounts, categories, budgets, and recurring entries you create</li>
+    <li>The display name and monthly income/budget figures you enter</li>
+    <li>Your selected currency, language, and theme preferences</li>
+    <li>A Zakat calculator entry (gold/silver price, nisab figures) if you use that feature</li>
+    <li>A remittance (money-sent-home) log if you use that feature</li>
+  </ul>
+  <p>This data is stored in a SQLCipher-encrypted local database. We — Bramora Labs — never see it, never receive a copy of it, and have no way to access it remotely, because there is no server for it to go to. Android automatic app backup is disabled, so the app's database is not included in Android Auto Backup — the only copy of your data that ever leaves this device is a backup file you explicitly choose to create and share yourself (see Section 4).</p>
+
+  <h2>3. Biometric Unlock and PIN</h2>
+  <p>The App is currently available for Android only. If you enable fingerprint/face unlock, that request is handled entirely by your device's operating system. The App never receives, stores, or has access to your actual fingerprint or face data — it only receives a yes/no result from the OS. If you set a PIN instead, it's stored using your device's secure, encrypted storage (Android Keystore, via <code>expo-secure-store</code>), not in the App's regular database, and never leaves your device. If an iOS version is released in the future, it will use the equivalent iOS Keychain storage, and this policy will be updated accordingly.</p>
+
+  <h2>4. Backups and Exports</h2>
+  <p>If you export a backup file, PDF summary, or CSV file, that file is generated entirely on your device and handed to your device's own share sheet (email, WhatsApp, Files app, etc. — whatever you pick). Bramora Labs never receives a copy. Backup files are encrypted with a password you choose at export time — you'll need that same password to restore it.</p>
+  <div class="callout"><strong>If you forget that password, the backup cannot be recovered by you or by us; there is no reset.</strong> PDF and CSV exports are not encrypted, so store and share those the same way you would any other document with your financial details in it.</div>
+
+  <h2>5. Third Parties</h2>
+  <p>The App does not use any third-party analytics, advertising, or crash-reporting SDKs. The only outbound link in the App is an optional "follow us on Instagram" link in Settings, which opens Instagram in your browser or the Instagram app — Bramora Labs does not receive any data from that click, though Instagram's own privacy policy applies once you're there.</p>
+  <p>Budget Tracker Pro (extra features like PDF/CSV export) is currently unlocked at no cost — no purchase is made and no payment information is collected, by Bramora Labs or anyone else. If a paid unlock is introduced later, this policy will be updated first, and payment would be processed entirely by the Google Play Store (or Apple App Store), which has its own privacy policy governing payment data — Bramora Labs would never see your payment details.</p>
+
+  <h2>6. Permissions the App Requests</h2>
+  <ul>
+    <li><strong>Biometric hardware</strong> (optional) — to unlock the App with fingerprint/face, if you choose to enable it. See Section 3.</li>
+    <li><strong>File/storage access</strong> — only when you choose to export a backup or import one you previously saved, or share a PDF/CSV.</li>
+    <li><strong>Internet access</strong> — declared by a component the App is built with, but never used to send or receive your data. Nothing in the App makes a network request; see the "no server, no cloud sync" description above.</li>
+  </ul>
+  <p>The App does not request camera, location, contacts, microphone, or notification permissions.</p>
+
+  <h2>7. Children's Privacy</h2>
+  <p>The App is not directed at children and does not knowingly collect data from anyone, of any age — since it doesn't collect data from anyone at all, in the sense of transmitting it anywhere.</p>
+
+  <h2>8. Deleting Your Data</h2>
+  <p>Because everything lives only on your device, you're always in full control:</p>
+  <ul>
+    <li>Delete individual entries any time from within the App.</li>
+    <li>Uninstalling the App, or clearing its storage from your device settings, permanently deletes all of your data. Bramora Labs has no copy and cannot recover it for you.</li>
+    <li>There is no account to delete and no server-side data to request deletion of, because none exists.</li>
+  </ul>
+
+  <h2>9. Your Rights (GDPR / CCPA / similar)</h2>
+  <p>Regulations like the GDPR and CCPA give you rights over personal data that a company <em>processes</em>. Bramora Labs does not collect, process, or store any of your personal data on our systems — it all stays on your device — so most of these rights don't have anything to act on here. If you ever have a privacy question or concern regardless, contact us using the details below.</p>
+
+  <h2>10. Changes to This Policy</h2>
+  <p>This Privacy Policy may be updated from time to time, for example if a future version of the App adds a feature that changes what's described above. Continuing to use the App after an update means you accept the revised policy.</p>
+
+  <h2>11. Governing Law</h2>
+  <p>This Policy is governed by the laws of the United Arab Emirates, without regard to its conflict-of-law principles.</p>
+
+  <h2>12. Contact</h2>
+  <p>Questions about this Privacy Policy: <a href="mailto:bramoralabsupport@gmail.com">bramoralabsupport@gmail.com</a></p>
+
+  <footer>Budget Tracker · Bramora Labs</footer>
+</div>
+</body>
+</html>
