@@ -23,7 +23,7 @@
   <p class="meta">Operated by Bramora Labs &nbsp;·&nbsp; Last updated: August 2026</p>
 
   <h2>1. The Short Version</h2>
-  <p>Budget Tracker does not collect, transmit, or share your financial data with anyone — including us. The App has no account system, no server for your data, no analytics, no ad network, and no crash-reporting service. Everything you enter — transactions, accounts, budgets, and so on — stays on your device, encrypted, until you choose to export it yourself. The one exception is if you purchase Budget Tracker Pro: that purchase is processed by Google Play and validated using RevenueCat, a third-party purchase-processing service — see Section 5 for exactly what that involves.</p>
+  <p>Budget Tracker does not collect, transmit, or share your financial data with anyone — including us. The App has no account system, no server for your data, no analytics, no ad network, and no crash-reporting service. Everything you enter — transactions, accounts, budgets, and so on — stays on your device, encrypted, until you choose to export it yourself. The one exception is purchase handling: the App checks whether this device has unlocked Budget Tracker Pro using RevenueCat, a third-party purchase-processing service, and any purchase itself is processed by Google Play — see Section 5 for exactly what that involves.</p>
 
   <h2>2. What Data the App Stores, and Where</h2>
   <p>The App stores the following, <strong>locally on your device only</strong>, in an encrypted database:</p>
@@ -45,18 +45,19 @@
 
   <h2>5. Third Parties</h2>
   <p>The App does not use any third-party analytics, advertising, or crash-reporting SDKs. The only outbound link in the App is an optional "follow us on Instagram" link in Settings, which opens Instagram in your browser or the Instagram app — Bramora Labs does not receive any data from that click, though Instagram's own privacy policy applies once you're there.</p>
-  <p>Budget Tracker Pro (extra features like PDF/CSV export) is available as an optional one-time in-app purchase. If you purchase Pro, the purchase itself is processed by the Google Play Store, and we use RevenueCat, Inc. to validate and keep track of that purchase. RevenueCat receives a randomly-generated anonymous identifier for your app install (not your name or email) and processes the purchase/transaction information associated with that identifier to provide Budget Tracker Pro's purchase functionality. RevenueCat does not receive your name, email address, or any of the financial data you've entered in the App. Neither Bramora Labs nor RevenueCat ever sees your card number or other payment details — that's handled entirely by Google Play. RevenueCat's own privacy policy is at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>. If you never purchase Pro, none of this applies to you — the App makes no network requests at all.</p>
+  <p>Budget Tracker Pro (extra features like PDF/CSV export) is available as an optional one-time in-app purchase. If you purchase Pro, the purchase itself is processed by the Google Play Store, and we use RevenueCat, Inc. to validate and keep track of that purchase. RevenueCat receives a randomly-generated anonymous identifier for your app install (not your name or email) and processes the purchase/transaction information associated with that identifier to provide Budget Tracker Pro's purchase functionality. RevenueCat does not receive your name, email address, or any of the financial data you've entered in the App. Neither Bramora Labs nor RevenueCat ever sees your card number or other payment details — that's handled entirely by Google Play. RevenueCat's own privacy policy is at <a href="https://www.revenuecat.com/privacy">revenuecat.com/privacy</a>.</p>
+  <p>Because the App needs to know whether this device has already unlocked Pro — for example after a reinstall or a switch to a new phone — it asks RevenueCat for that purchase status each time the App starts, and again if you open the Go Pro screen so it can show current prices. <strong>This happens whether or not you have ever bought Pro.</strong> All RevenueCat receives in that check is the random anonymous install identifier described above and the purchase status attached to it — never your name, email address, advertising ID, contacts, or any of the transactions, accounts, or budgets you've entered in the App. Apart from these purchase-status checks and the optional Instagram link above, the App makes no network requests, and none of your financial data is ever transmitted anywhere.</p>
 
   <h2>6. Permissions the App Requests</h2>
   <ul>
     <li><strong>Biometric hardware</strong> (optional) — to unlock the App with fingerprint/face, if you choose to enable it. See Section 3.</li>
     <li><strong>File/storage access</strong> — only when you choose to export a backup or import one you previously saved, or share a PDF/CSV.</li>
-    <li><strong>Internet access</strong> — used only if you choose to purchase Budget Tracker Pro, to process that purchase via Google Play and validate it via RevenueCat (see Section 5). If you never purchase Pro, nothing in the App makes a network request.</li>
+    <li><strong>Internet access</strong> — used to check your Budget Tracker Pro purchase status with RevenueCat when the App starts, to show current prices if you open the Go Pro screen, and to process a purchase or a "restore purchases" through Google Play (see Section 5). It is never used to send your financial data anywhere.</li>
   </ul>
   <p>The App does not request camera, location, contacts, microphone, or notification permissions.</p>
 
   <h2>7. Children's Privacy</h2>
-  <p>The App is not directed at children and does not knowingly collect data from anyone, of any age — since it doesn't collect data from anyone at all, in the sense of transmitting it anywhere.</p>
+  <p>The App is not directed at children and does not knowingly collect personal data from anyone, of any age. Nothing you enter in the App is transmitted anywhere, and the only data that does leave the device is the anonymous purchase-status check described in Section 5, which identifies an app install rather than a person.</p>
 
   <h2>8. Deleting Your Data</h2>
   <p>Because everything lives only on your device, you're always in full control:</p>
